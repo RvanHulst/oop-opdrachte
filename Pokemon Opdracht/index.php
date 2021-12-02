@@ -18,9 +18,9 @@ heeft een Resistance EnergyType "Fighting" met een waarde van 20*/
 
 $pikachu = new pokemon(
     "Pickachu", 
-    "Lightning", 
+    new energyType("Lightning"),
     "60",
-    "[Electric Ring, Pika Punch]", 
+    [new attack("Electric Ring", 50), new attack("Pika Punch", 20)],
     new weakness("Fire", 1.5),
     new resistance("Fighting", 20)
 
