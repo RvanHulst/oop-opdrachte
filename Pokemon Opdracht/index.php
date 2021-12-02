@@ -1,7 +1,9 @@
 <?php
+spl_autoload_register(function ($class_name) {
+    require 'pokeStats/' . $class_name . '.php';
+});
 
 require 'pokemon.php';
-require 'pokeStats/weakness.php';
 
 // pikachu class maken die helemaal is uitgewerkt
 
@@ -19,8 +21,8 @@ $pikachu = new pokemon(
     "Lightning", 
     "60",
     "[Electric Ring, Pika Punch]", 
-    new weakness("fire", 1.5),
-    "Fighting"
+    new weakness("Fire", 1.5),
+    new resistance("Fighting", 20)
 
 );
 
