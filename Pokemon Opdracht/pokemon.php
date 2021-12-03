@@ -1,12 +1,12 @@
 <?php
 
 class pokemon {
-    private $name ='';
-    private $energyType ='';
-    private $hitpoints ='';
-    private $attacks ='';
-    private $weakness ='';
-    private $resistance ='';
+    private $name;
+    private $energyType;
+    private $hitpoints;
+    private $attacks;
+    private $weakness;
+    private $resistance;
 
 
     public function __construct($name, $energyType, $hitpoints, $attacks, $weakness, $resistance)
@@ -19,8 +19,9 @@ class pokemon {
         $this->resistance = $resistance;
     }
 
-    public function changeName($name){
-        $this->name = $name;
+    public function attack($target, $attack){
+       $damage = $this->attacks[$attack];
+       var_dump($damage);
     }
 }
 

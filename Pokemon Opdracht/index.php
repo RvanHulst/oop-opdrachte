@@ -34,7 +34,15 @@ $charmeleon  = new pokemon(
     new resistance("Lightning", 10)
 );
 
-var_dump($pikachu, $charmeleon);
+//var_dump($pikachu, $charmeleon);
 
 
 //$pikachu->changeName('raaf');
+
+
+/* Als je klaar bent met het aanmaken van de classes laat je de pokemon als volgt tegen elkaar vechten:
+Pikachu valt Charmeleon aan met een Electric Ring attack
+Charmeleon valt Pikachu aan met een Flare attack
+Print voor en na de aanval de health uit van de pokemon die wordt aangevallen.*/
+
+$pikachu->attack($charmeleon, 0);
