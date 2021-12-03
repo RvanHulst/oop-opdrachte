@@ -23,9 +23,18 @@ $pikachu = new pokemon(
     [new attack("Electric Ring", 50), new attack("Pika Punch", 20)],
     new weakness("Fire", 1.5),
     new resistance("Fighting", 20)
-
 );
 
-var_dump($pikachu);
+$charmeleon  = new pokemon(
+    "Charmeleon",
+    new energyType("Fire"),
+    "60",
+    [new attack("Head Butt", 10), new attack("Flare", 30)],
+    new weakness("Water", 2),
+    new resistance("Lightning", 10)
+);
+
+var_dump($pikachu, $charmeleon);
+
 
 //$pikachu->changeName('raaf');
