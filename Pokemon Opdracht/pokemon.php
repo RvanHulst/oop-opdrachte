@@ -20,9 +20,17 @@ class pokemon {
     }
 
     public function attack($target, $attack){
-       $damage = $this->attacks[$attack];
-       var_dump($damage);
+       print_r($this->name . " attacks " . $target->name . " with " . $this->attacks[$attack]->getAttackName() . " attack <br>" );
+        if
+
+
     }
 }
+/*de schade van een Attack wordt vermenigvuldigd met de multiplier van de Weakness indien de EnergyType van de Weakness gelijk is aan de EnergyType van de aanvallende Pokemon
 
+
+de schade van een Attack wordt verminderd met de waarde van de Resistance indien de EnergyType van de Resistance gelijk is aan de EnergyType van de aanvallende Pokemon */
 ?>
+
+
+
