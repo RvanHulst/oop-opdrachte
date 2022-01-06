@@ -8,4 +8,14 @@ class weakness{
     $this->weakness = $weakness;
     $this->multiplier = $multiplier;
    }
+
+   public function getWeaknessType()
+   {
+       return $this->weakness;
+   }
+
+   public function getWeaknessValue()
+   {
+       return $this->multiplier;
+   }
 }

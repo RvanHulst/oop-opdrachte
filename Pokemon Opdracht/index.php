@@ -45,5 +45,5 @@ Pikachu valt Charmeleon aan met een Electric Ring attack
 Charmeleon valt Pikachu aan met een Flare attack
 Print voor en na de aanval de health uit van de pokemon die wordt aangevallen.*/
 
-$pikachu->attack($charmeleon, 0);
+$pikachu->attack($charmeleon, 0); 
 $charmeleon->attack($pikachu, 1);
