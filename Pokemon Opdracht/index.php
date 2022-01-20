@@ -16,6 +16,7 @@ Pika Punch doet 20 schade
 heeft een Weakness EnergyType "Fire" met een multiplier van 1,5
 heeft een Resistance EnergyType "Fighting" met een waarde van 20*/
 
+
 $pikachu = new pokemon(
     "Pickachu", 
     new energyType("Lightning"),
@@ -47,3 +48,5 @@ Print voor en na de aanval de health uit van de pokemon die wordt aangevallen.*/
 
 $pikachu->attack($charmeleon, 0); 
 $charmeleon->attack($pikachu, 1);
+
+pokemon::returnPokemonPopulation();
