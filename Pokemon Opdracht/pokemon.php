@@ -1,13 +1,13 @@
 <?php
 
 class pokemon {
-    public $name;
-    public $energyType;
-    public $hitpoints;
-    public $attacks;
-    public $weakness;
-    public $resistance;
-    public static $pokemonAliveCounter = 0;
+    private $name;
+    private $energyType;
+    private $hitpoints;
+    private $attacks;
+    private $weakness;
+    private $resistance;
+    private static $pokemonAliveCounter = 0;
 
     public function __construct($name, $energyType, $hitpoints, $attacks, $weakness, $resistance)
     {
@@ -24,6 +24,10 @@ class pokemon {
     public static function returnPokemonPopulation(){
         print_r("Pokemon's alive at the moment " . self::$pokemonAliveCounter);
     }
-}
 
+
+    public function __get($property){
+        return $this->$property;
+    }
+}
 ?>
